@@ -1,0 +1,204 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+ /*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+  /*
+    3. Allow percentage-based heights in the application
+  */
+html, body {
+    height: 100%;
+}
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+  /*
+    6. Improve media defaults
+  */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+  /*
+    7. Remove built-in form typography styles
+  */
+input, button, textarea, select {
+    font: inherit;
+}
+  /*
+    8. Avoid text overflows
+  */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* main styling*/
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: hsl(217, 54%, 11%);
+  position: relative;
+}
+
+.card {
+  width: 335px;
+  height: 565px;
+  background: hsl(216, 50%, 16%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid hsl(216, 50%, 16%);
+  box-shadow: 0px 25px 8px 18px rgba(0,0,0,0.06), 0px 20px 10px 55px rgba(0,0,0,0.05);
+}
+
+.img {
+  width: 290px;
+  height: 290px;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.layer {
+  position: absolute;
+  height: 290px;
+  width: 290px;
+  top: 20px;
+  left: 20px;
+  transition: 0.3s;
+}
+
+.layer:hover {
+  background: rgba(0,255,247,0.7);
+  border-radius: 10px;
+}
+
+.layer .view {
+  position: absolute;
+  top: 40%;
+  left: 43%;
+  opacity: 0;
+  color: white;
+  transition: 0.3s;
+}
+
+.layer:hover .view {
+  opacity: 1;
+}
+
+.text {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+h3 {
+  margin-top: 10px;
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+h3:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+p {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+.value {
+  margin-bottom: 20px;
+  display: flex;
+  font-size: 14px;
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+.clock {
+  margin-left: 130px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+svg {
+  margin-top: 2px;
+  margin-right: 5px;
+}
+
+hr{
+  color: hsl(215, 32%, 27%);
+}
+
+.card_bottom{
+  display: flex;
+}
+
+.card_bottom img {
+  width: 30px;
+  margin-top: 15px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50px;
+}
+
+.name {
+  margin-top: 19px;
+  display: flex;
+  margin-left: 15px;
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.name:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.author {
+  margin-right: 5px;
+  color: hsl(215, 51%, 70%);
+  font-size: 15px;
+}
+
+.attribution { 
+  position: absolute;
+  font-size: 11px; 
+  text-align: center; 
+  bottom: 10px;
+  left: 42%;
+  color: white;
+}
+
+.attribution a { 
+  color: hsl(178, 100%, 50%); 
+}
