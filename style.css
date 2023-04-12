@@ -56,7 +56,7 @@ main {
 
 .card {
   width: 335px;
-  height: 565px;
+  height: 570px;
   background: hsl(216, 50%, 16%);
   position: absolute;
   top: 50%;
@@ -112,7 +112,7 @@ main {
   text-align: left;
 }
 
-h3 {
+h1 {
   margin-top: 10px;
   color: hsl(0, 0%, 100%);
   font-size: 20px;
@@ -121,7 +121,7 @@ h3 {
   cursor: pointer;
 }
 
-h3:hover {
+h1:hover {
   color: hsl(178, 100%, 50%);
 }
 
